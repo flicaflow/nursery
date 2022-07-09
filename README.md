@@ -18,8 +18,8 @@ The most common structure of concurrent execution involves spawning of several g
                       |
          +------------+-----------+
          |            |           |
-	+--------+   +--------+   +--------+
-	| Task 1 |   | Task 2 |   | Task 3 |
+    +--------+   +--------+   +--------+
+    | Task 1 |   | Task 2 |   | Task 3 |
     #--------+   +--------+   +--------+
          |            |           |
          +------------+-----------+
