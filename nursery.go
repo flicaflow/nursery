@@ -41,6 +41,9 @@ func (n *Nursery) Go(task Task) *Nursery {
 	return n
 }
 
+// Wait blocks until either one task has exited with an error
+// or until all tasks have been finished without.
+// If an error occures this error is retruned by Wait()
 func (n *Nursery) Wait() error {
 	doneCh := make(chan struct{})
 	go func() {
