@@ -9,6 +9,8 @@ Synchronization is supported by classical primitives such as mutex or wait group
 Structuring the concurrent execution of work is up to the user.
 This involves topics like waiting for goroutines to complete, and error handling.
 
+This implementation was done in reaction to [Notes on structured concurrency, or: Go statement considered harmful](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/) by njs. I think comparing go to goto goes to far, but I think it is clear that software development can benefit from higher level concurrency primitives for everyday use cases.
+
 Structured concurrency aims to give concurrent execution a structure which is easy to understand and reason about.
 The most common structure of concurrent execution involves spawning of several goroutines, and waiting for then to finish.
 ```
